@@ -12,4 +12,5 @@ class Comment(Base):
   created_at = Column(DateTime, default=datetime.now)
   updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
+
   user = relationship('User')
